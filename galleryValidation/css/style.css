@@ -1,0 +1,89 @@
+*{
+    font-family: 'Rasa', serif;
+}
+
+body{
+    font-size: 18px;
+}
+
+.navTeste {
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+}
+
+/* Título Principal Início */
+
+section h1{
+    text-align: center;
+}
+
+section p{
+    text-align: center;
+}
+
+/* Título Principal Fim */
+
+/* Galeria Início */
+
+section div h2{
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 4px;
+}
+
+section div p{
+    font-size: 1.2em;
+    margin-bottom: inherit;
+}
+
+section div button{
+    border-radius: 50px;
+    border: none;
+    color: yellow;
+    background-color: black;
+    padding: 3px 40px;
+}
+
+/* Galeria Fim */
+
+.flip-container {
+	perspective: 1000;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flipper {
+	transition: 0.5s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .flip-card-front, .flip-card-back {
+    backface-visibility: hidden;
+	top: 0;
+	left: 0;
+  }
+  
+  .text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+  }
+
+  

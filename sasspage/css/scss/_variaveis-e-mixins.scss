@@ -1,0 +1,35 @@
+// Cores
+
+$bege-claro: #edece4;
+$bege-medio: #cdc6b9;
+$bege-escuro: #988c77;
+$verde: #1ab912;
+$cinza: #2a2426;
+
+// Fonte
+
+$fonte-logo: 'Catamaran', sans-serif;
+$fonte-texto: 'Cantarell', sans-serif;
+
+@function  em ($pixel , $contexto: 16){
+    @return $pixel / $contexto + em;
+}
+
+@mixin tipografia-1($size){
+    font-family: $fonte-logo;
+    @if $size == 18px {
+        font-size: em(18);
+        line-height: em(30, 18);
+    }
+}
+
+@mixin tipografia-2($size){
+    font-family: $fonte-texto;
+    @if $size == 18px {
+        font-size: em(18);
+        line-height: em(30, 18);
+    } @else if $size == 24 {
+        font-size: em(24);
+        line-height: em(30, 24);
+    }
+}

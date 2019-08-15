@@ -1,0 +1,51 @@
+body{
+    background: $bege-claro;
+    border: 5px solid $bege-medio;
+    color: $cinza;
+    @include d(s){
+        border: none;
+    }
+}
+
+.grid-7 img{
+    max-width: 100%;
+    max-height: 700px;
+    display: block;
+}
+
+.logo{
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.info-item img{
+    max-width: 100%;
+    max-height: 250px;
+    display: block;
+}
+
+p{
+    @include tipografia-2(18);
+}
+
+.titulo{
+    @include tipografia-1(18);
+    text-transform: uppercase;
+    @include d(s){
+        margin-bottom: 40px;
+    }
+    &::after{
+        content: '';
+        display: block;
+        background: $cinza;
+        width: 70%;
+        float: right;
+        height: 2px;
+        margin-top: 14px;
+        @include d(m) {
+            width: 60%;
+        }
+    }
+}
